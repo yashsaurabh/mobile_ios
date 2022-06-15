@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19461" systemVersion="20F71" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Deal" representedClassName="Deal" syncable="YES">
+        <attribute name="agencyContactNumber" optional="YES" attributeType="String"/>
+        <attribute name="agencyOwnerName" optional="YES" attributeType="String"/>
+        <attribute name="bookingDate" optional="YES" attributeType="String"/>
+        <attribute name="buyerFirstName" optional="YES" attributeType="String"/>
+        <attribute name="buyerLastName" optional="YES" attributeType="String"/>
+        <attribute name="buyerMiddleName" optional="YES" attributeType="String"/>
+        <attribute name="buyerType" optional="YES" attributeType="String"/>
+        <attribute name="dealAgentMobileNumber" optional="YES" attributeType="String"/>
+        <attribute name="dealAgentName" optional="YES" attributeType="String"/>
+        <attribute name="dealClosingDate" optional="YES" attributeType="String"/>
+        <attribute name="fileNumber" optional="YES" attributeType="String"/>
+        <attribute name="financeInstitute" optional="YES" attributeType="String"/>
+        <attribute name="lenderLoanNumber" optional="YES" attributeType="String"/>
+        <attribute name="lenderName" optional="YES" attributeType="String"/>
+        <attribute name="loanAmount" optional="YES" attributeType="String"/>
+        <attribute name="propertyAddress" optional="YES" attributeType="String"/>
+        <attribute name="propertyCity" optional="YES" attributeType="String"/>
+        <attribute name="propertyCountry" optional="YES" attributeType="String"/>
+        <attribute name="propertyLot" optional="YES" attributeType="String"/>
+        <attribute name="propertyMunicipality" optional="YES" attributeType="String"/>
+        <attribute name="propertyParcelID" optional="YES" attributeType="String"/>
+        <attribute name="propertyState" optional="YES" attributeType="String"/>
+        <attribute name="propertySubdivision" optional="YES" attributeType="String"/>
+        <attribute name="propertyType" optional="YES" attributeType="String"/>
+        <attribute name="propertyZipCode" optional="YES" attributeType="String"/>
+        <attribute name="salesPrice" optional="YES" attributeType="String"/>
+        <attribute name="selectProperty" optional="YES" attributeType="String"/>
+        <attribute name="sellerFirstName" optional="YES" attributeType="String"/>
+        <attribute name="sellerLastName" optional="YES" attributeType="String"/>
+        <attribute name="sellerMiddleName" optional="YES" attributeType="String"/>
+        <attribute name="sellerType" optional="YES" attributeType="String"/>
+        <attribute name="transactionType" optional="YES" attributeType="String"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="deals" inverseEntity="User"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="agencyAddress" optional="YES" attributeType="String"/>
+        <attribute name="agencyName" optional="YES" attributeType="String"/>
+        <attribute name="businessLocation" optional="YES" attributeType="String"/>
+        <attribute name="businessType" optional="YES" attributeType="String"/>
+        <attribute name="city" optional="YES" attributeType="String"/>
+        <attribute name="contactMe" optional="YES" attributeType="String"/>
+        <attribute name="contactPersonEmail" optional="YES" attributeType="String"/>
+        <attribute name="contactPersonFirstName" optional="YES" attributeType="String"/>
+        <attribute name="contactPersonLastName" optional="YES" attributeType="String"/>
+        <attribute name="dealingStates" optional="YES" attributeType="String"/>
+        <attribute name="dealsType" optional="YES" attributeType="String"/>
+        <attribute name="email" optional="YES" attributeType="String"/>
+        <attribute name="firstName" optional="YES" attributeType="String"/>
+        <attribute name="lastName" optional="YES" attributeType="String"/>
+        <attribute name="numberOfEmployees" optional="YES" attributeType="String"/>
+        <attribute name="password" optional="YES" attributeType="String"/>
+        <attribute name="state" optional="YES" attributeType="String"/>
+        <attribute name="zipCode" optional="YES" attributeType="String"/>
+        <relationship name="deals" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Deal" inverseName="user" inverseEntity="Deal"/>
+    </entity>
+    <elements>
+        <element name="Deal" positionX="-63" positionY="108" width="128" height="524"/>
+        <element name="User" positionX="-63" positionY="-18" width="128" height="314"/>
+    </elements>
+</model>
